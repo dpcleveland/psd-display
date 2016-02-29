@@ -2,13 +2,6 @@ body {
 	font-family: Novecentosanswide-DemiBold;
 }
 
-.row {
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-
 .header {
 	margin-top: 30px;
 }
@@ -20,7 +13,6 @@ body {
 	width: 163px;
 	height: 50px;
 	float: left;
-	margin: 0;
 }
 
 .social-icons {
@@ -105,15 +97,16 @@ body {
 }
 
 .navigation {
-	margin: 30px 0 0 0;
+	margin-top: 35px;
 	padding-top: 25px;
-	padding-bottom: 35px;
+	margin-bottom: 15px;
 	border-top: 1px solid #dadada;
 }
 
 .navigation ul {
 	list-style: none;
-	padding: 0;
+	float: left;
+	padding-left: 0;
 }
 
 .navigation ul li {
@@ -140,14 +133,15 @@ body {
 
 .main-content {
 	background-color: #ffffff;
-	margin: 0;
-	padding: 0;
 }
 
-.main-content img {
+.devices {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.devices img {
 	width: 100%;
-	margin: 0;
-	padding: 0;
 }
 
 .main-content .intro {
@@ -183,4 +177,25 @@ body {
 	text-decoration: none;
 	margin-top: 27px;
 	display: inline-block;
+}
+
+.secondary-content {
+	background-color: #efefef;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 800px) {
+	.logo {
+		float: none;
+	}
+	.social-icons {
+		float: none;
+	}
+	.navigation ul {
+		float: none;
+	}
 }
