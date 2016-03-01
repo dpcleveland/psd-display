@@ -46,6 +46,10 @@ body {
 	height: 15px;
 }
 
+.social-icons .twitter {
+	margin-left: 0px;
+}
+
 .social-icons .facebook {
 	padding: 8px 10px;
 }
@@ -188,14 +192,27 @@ body {
 
 /* Media Queries */
 
-@media (min-width: 800px) {
+@media (max-width: 768px) {
 	.logo {
 		float: none;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.social-icons {
 		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.social-icons ul {
+		padding-left: 0px;
 	}
 	.navigation ul {
 		float: none;
+	}
+	.navigation ul li {
+		float: none;
+		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
